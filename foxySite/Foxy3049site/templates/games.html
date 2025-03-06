@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxy3049 site</title>
+    <link rel="stylesheet" href="{% static 'CSS/css.css' %}">
+    <link rel="icon" href="{% static 'images/icon.bmp' %}" sizes="32x32">
+    <link rel="icon" href="{% static 'images/icon.bmp' %}" sizes="128x128"> 
+</head>
+<body>
+    <div id="LeftPanel">
+        <a href="index.html" id="home"><img src="https://web.archive.org/web/20091027081525/http://geocities.com/rosacarmen/Phome.gif"><p>Home</p></a>
+        <a href="games.html" id="games"><img src="https://web.archive.org/web/20091025221459/http://www.geocities.com/taliban_turban/old_style_joystick_md_clr.gif" width="50"><p>Games</p></a>
+    </div>
+    <div id="content">
+        <object width="800" height="600" style="margin-left: 10%; margin-top: 5%;">
+            <param name="movie" value="{% static 'Brake It.swf' %}">
+            <embed src="{% static 'Brake It.swf' %}" width="800" height="600">
+            </embed>
+        </object>
+    </div>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</body>
+</html>

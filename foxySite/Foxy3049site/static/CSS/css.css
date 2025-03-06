@@ -1,0 +1,62 @@
+body {
+    background-image: url("https://web.archive.org/web/20091027105412/http://geocities.com/h3rbi/background.gif");
+}
+
+
+#LeftPanel {
+    width: 100px;
+    height: 100vh;
+    background-image: url("https://web.archive.org/web/20091020024536/http://hk.geocities.com/heero_green/background.gif");
+    color: #fff;
+    box-sizing: border-box;
+    position: fixed;
+    border: medium solid red;
+}
+
+#content {
+    width: 1000px;
+    height: 100vh;
+    background-image: url("https://web.archive.org/web/20091026234809/http://au.geocities.com/aenima_321/images/background.gif");
+    color: #fff;
+    box-sizing: border-box;
+    position: absolute;
+    border: medium solid red;
+    margin-left: 20%;
+}
+
+.leftPanelElement {
+    color: red;
+    text-align: center;
+    margin-left: 25%;
+}
+
+#Logo {
+    margin-left: 32%;
+}
+
+#underConstruction {
+    margin-left: 32%;
+    margin-top: 10%;
+}
+
+#Russian {
+    margin-left: 37%;
+}
+
+#English {
+    margin-left: 10%;
+}
+
+#main-text {
+    text-align: center;
+}
+
+.youtube {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+.youtube  *{
+    height: 80%;
+    width: auto;
+}
