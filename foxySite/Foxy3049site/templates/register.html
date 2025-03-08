@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxy3049 site</title>
+    <link rel="stylesheet" href="{% static 'CSS/css.css' %}">
+    <link rel="icon" href="{% static 'images/icon.bmp' %}" sizes="32x32">
+    <link rel="icon" href="{% static 'images/icon.bmp' %}" sizes="128x128">
+</head>
+<body>
+    <div id="LeftPanel">
+        <a href="index.html" id="home" class="leftPanelElement"><img src="https://web.archive.org/web/20091027081525/http://geocities.com/rosacarmen/Phome.gif"><p>Home</p></a>
+        <a href="games.html" id="games" class="leftPanelElement"><img src="https://web.archive.org/web/20091025221459/http://www.geocities.com/taliban_turban/old_style_joystick_md_clr.gif" width="50"><p>Games</p></a>
+        {% comment %} <a href="index.html" id="home" class="leftPanelElement"><img src="https://web.archive.org/web/20091027081525/http://geocities.com/rosacarmen/Phome.gif"><p>Home</p></a> {% endcomment %}
+        <a href="games.html" id="games" class="leftPanelElement"><img src="https://web.archive.org/web/20091027004251/http://www.geocities.com/mich2inf/photos/book2.gif" width="60'"><p>Guest Book</p></a>
+    </div>
+    <div id="content">
+        <form action="{% url 'reg' %}" method='POST'>
+            {% csrf_token %}
+            <input type="text" class="form-control" name="nickname" id="nickname" placeholder="Enter nickname">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+            <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
+            <input type="button" id="buttonSubmit" class="form-control" value="Submit">
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/send.js' %}"></script>
+</body>
+</html>
