@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxy3049 site</title>
+    <link rel="stylesheet" href="{% static 'CSS/css.css' %}">
+    <link rel="icon" href="{% static 'images/icon.bmp' %}" sizes="32x32">
+    <link rel="icon" href="{% static 'images/icon.bmp' %}" sizes="128x128">
+</head>
+<body>
+    <div id="LeftPanel">
+        <a href="index.html" id="home" class="leftPanelElement"><img src="https://web.archive.org/web/20091027081525/http://geocities.com/rosacarmen/Phome.gif"><p>Home</p></a>
+        <a href="games.html" id="games" class="leftPanelElement"><img src="https://web.archive.org/web/20091025221459/http://www.geocities.com/taliban_turban/old_style_joystick_md_clr.gif" width="50"><p>Games</p></a>
+        {% comment %} <a href="index.html" id="home" class="leftPanelElement"><img src="https://web.archive.org/web/20091027081525/http://geocities.com/rosacarmen/Phome.gif"><p>Home</p></a> {% endcomment %}
+        <a href="guestBook.html" id="games" class="leftPanelElement"><img src="https://web.archive.org/web/20091027004251/http://www.geocities.com/mich2inf/photos/book2.gif" width="60'"><p>Guest Book</p></a>
+    </div>
+    <div id="content">
+        <img src="{% static 'images/Foxy3049 site.png' %}" id="Logo">
+        <H1 style="text-align: center;">Welcome to Foxy3049 website!</H1>
+        <a><img id="Russian" src="https://web.archive.org/web/20090829223335/http://geocities.com/Petsburgh/Zoo/3933/russiaclr_cg31.gif"></a>
+        <img id="English" src="https://web.archive.org/web/20091023223929/http://www.geocities.com/liberty_link/res/logo/English.gif">
+        <p id="main-text">Привет! Добро пожаловать на мой сайт! Как вы поняли по дизайну данного сайта я люблю электронику и всё что с ней связанно тех времён (2000-х). Я люблю стилистику <a href="https://ru.wikipedia.org/wiki/Frutiger_Aero">Frutiger Aero</a> Я являюсь владельцем "<a href="https://foxy3049.github.io/foxygaems/">Foxy Gaems</a>".</p>
+        <div class="youtube">
+            <a href="https://www.youtube.com/@FoxyGaemsOfficial"><img src="https://web.archive.org/web/20091027061414/http://geocities.com/sumeshisgreat/youtube.gif" style="margin-left: 2%;"></a> 
+            <p id="youtube-hello" style="margin-left: 5%;">Так же у меня есть YouTube канал, на нём я собираюсь выкладывать анимации сделаные в Blender</p>
+        </div>
+
+        <img src="{% static 'images/button.png' %}" style="padding-left: 2%">
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/send.js' %}"></script>
+</body>
+</html>
