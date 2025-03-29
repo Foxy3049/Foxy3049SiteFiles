@@ -1,0 +1,52 @@
+body {
+    height: 100vh;
+    background: rgb(238,238,238);
+    background: -moz-linear-gradient(180deg, rgba(238,238,238,1) 0%, rgba(154,154,154,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(238,238,238,1) 0%, rgba(154,154,154,1) 100%);
+    background: linear-gradient(180deg, rgba(238,238,238,1) 0%, rgba(154,154,154,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#loginDiv {
+    background: 
+        linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(174,174,174,1) 100%), /*BG*/
+        linear-gradient(180deg, rgba(165,165,165,1) 0%, rgba(245,245,245,1) 50%, rgba(185,185,185,1) 50%, rgba(114,114,114,1) 100%);
+    max-width: 548px;
+    width: 548px;
+    height: 693px;
+    max-height: 693px;
+    border: 3px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginLabel, #passwordLabel {
+    margin-bottom: 10px;
+}
+
+#loginTextfield, #loginPassword {
+    margin-top: 5px;
+}
+
+#loginShapka {
+    position: absolute;
+    top: 34px; /* Adjust the top value as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the image horizontally */
+}
+
+#submitButton {
+    justify-self: end;
+    align-self: end;
+    bottom: 10px; /* Adjust the bottom value as needed */
+    right: 10px; /* Adjust the right value as needed */
+}
