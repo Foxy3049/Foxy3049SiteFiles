@@ -8,5 +8,6 @@ urlpatterns = [
     path('games.html', views.games, name="games"),
     path('guestBook.html', views.guestbook, name="guestBook"),
     path('login.html', views.auth, name='auth'),
-    path('register.html', views.reg, name="register")
+    path('register.html', views.reg, name="register"),
+    path('test.html', views.test, name="test")
 ]

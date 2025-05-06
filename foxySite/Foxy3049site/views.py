@@ -21,3 +21,6 @@ def reg(request):
     return render(request, 'register.html')
 def auth(request):
     return render(request, 'auth.html')
+
+def test(request):
+    return render(request, 'test.html')
