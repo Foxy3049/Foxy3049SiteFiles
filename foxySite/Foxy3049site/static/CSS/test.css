@@ -1,0 +1,15 @@
+#navbar {
+    background: linear-gradient(180deg,rgba(88, 88, 88, 1) 0%, rgba(172, 172, 172, 1) 50%, rgba(102, 102, 102, 1) 50%, rgba(65, 65, 65, 1) 100%);
+    width: 1000px;
+    height: 72px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+body {
+    margin: 0;
+}
