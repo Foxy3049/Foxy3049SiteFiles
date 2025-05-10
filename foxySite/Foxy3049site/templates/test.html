@@ -7,12 +7,27 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'CSS/test.css' %}">
     </head>
     <body style="background-image: url({% static 'Images/tile.png' %})">
         <div id="navbar">
-            <div id="navbarMain">
+            <div id="navbarMain" class="selected outline-right center-text">
+                <p id="mainText" class="inter-Italic center-text-vertical">Main</p>
+            </div>
 
+            <div id="navbarGames" class="unselected outline-right center-text">
+                <p id="gamesText" class="inter-Italic center-text-vertical">Games</p>
+            </div>
+
+            <div id="navbarTextChat" class="unselected outline-right center-text">
+                <p id="textChatText" class="inter-Italic center-text-vertical">Text Chat</p>
+            </div>
+
+            <div id="navbarGuestBook" class="unselected outline-right center-text">
+                <p id="guestBookText" class="inter-Italic center-text-vertical">Guest Book</p>
             </div>
         </div>
     </body>

@@ -11,11 +11,109 @@ body {
     border-right: 2px solid black;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0;
+    display: block;
 }
 
 #navbarMain {
-    background: linear-gradient(180deg,rgba(154, 154, 154, 1) 0%, rgba(212, 212, 212, 1) 51%, rgba(83, 83, 83, 1) 51%, rgba(37, 37, 37, 1) 100%);
     width: 112px;
-    height: 70px;
+    height: 72px;
+    display: inline-block;
+    z-index: 0;
+    margin-top: 0;
+}
+
+#navbarTextChat {
+    width: 124px;
+    height: 72px;
+    display: inline-block;
+}
+
+#navbarGames {
+    width: 123px;
+    height: 72px;
+    display: inline-block;
+    z-index: 0;
+    margin-top: 0;
+}
+
+#navbarGuestBook {
+    width: 106px;
+    height: 72px;
+    display: inline-block;
+}
+
+.inter-Italic {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#mainText {
+    color: white;
+    font-size: 36px;
+    width: 112px;
+    height: 72px;
+    z-index: 1;
+    text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#gamesText {
+    color: white;
+    font-size: 24px;
+    width: 123px;
+    height: 72px;
+    z-index: 1;
+    text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#textChatText {
+    color: white;
+    font-size: 24px;
+    width: 124px;
+    height: 72px;
+    z-index: 1;
+    text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#guestBookText {
+    color: white;
+    font-size: 27px;
+    width: 124px;
+    height: 72px;
+    z-index: 1;
+    text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.outline-left {
+    border-left: 2px solid black;
+}
+
+.outline-right {
+    border-right: 2px solid black;
+}
+
+.selected {
+    background: linear-gradient(180deg,rgba(154, 154, 154, 1) 0%, rgba(212, 212, 212, 1) 51%, rgba(83, 83, 83, 1) 51%, rgba(37, 37, 37, 1) 100%);
+}
+
+.unselected {
+    background: transparent;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-text-vertical {
+    display: table-cell; 
+    vertical-align: middle; 
 }
