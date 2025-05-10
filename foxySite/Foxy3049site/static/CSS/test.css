@@ -117,3 +117,25 @@ body {
     display: table-cell; 
     vertical-align: middle; 
 }
+
+#loginDiv {
+    background-color: transparent;
+    width: 149px;
+    height: 72px;
+    display: inline-block;
+    float: right;
+}
+
+#nameText {
+    color: white;
+    font-size: 20px;
+    text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+    margin-left: 9%;
+    display: inline-block;
+}
+
+#arrowDown {
+    margin-left: 3%;
+}
