@@ -24,3 +24,6 @@ def auth(request):
 
 def test(request):
     return render(request, 'test.html')
+
+def chat(request):
+    return render(request, 'chat.html')

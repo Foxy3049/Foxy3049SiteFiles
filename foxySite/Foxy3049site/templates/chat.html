@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'CSS/test.css' %}">
+    </head>
+    <body style="background-image: url({% static 'Images/tile.png' %})">
+        <div id="navbar">
+            <div id="navbarMain" class="unselected outline-right center-text">
+                <a href="test.html"><p id="mainText" class="inter-Italic center-text-vertical">Main</p></a>
+            </div>
+
+            <div id="navbarGames" class="unselected outline-right center-text">
+                <a href="games.html"><p id="gamesText" class="inter-Italic center-text-vertical">Games</p></a>
+            </div>
+
+            <div id="navbarTextChat" class="selected outline-right center-text">
+                <a href="chat.html"><p id="textChatText" class="inter-Italic center-text-vertical">Text Chat</p></a>
+            </div>
+
+            <div id="navbarGuestBook" class="unselected outline-right center-text">
+                <a href="guestBook.html"><p id="guestBookText" class="inter-Italic center-text-vertical">Guest Book</p></a>
+            </div>
+
+            <div id="loginDiv" class="outline-left">
+                <p id="nameText" class="inter-Italic">Nickname</p>
+                <img <img id="arrowDown" src="{% static 'images/arrowDown.png' %}" </img>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="mainContent" class="contentItem">
+                <div style="margin-left: 5px; margin-top: 5px">
+                    <img src="{% static 'images/FMessengerFlash.png' %}" </img>
+                    <img src="{% static 'images/powerdByRuffle.png' %}" </img>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    </body>
+</html>

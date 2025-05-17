@@ -9,5 +9,6 @@ urlpatterns = [
     path('guestBook.html', views.guestbook, name="guestBook"),
     path('login.html', views.auth, name='auth'),
     path('register.html', views.reg, name="register"),
-    path('test.html', views.test, name="test")
+    path('test.html', views.test, name="test"),
+    path('chat.html', views.chat, name="chat")
 ]
