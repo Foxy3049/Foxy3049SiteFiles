@@ -18,15 +18,15 @@
                 <a href="test.html"><p id="mainText" class="inter-Italic center-text-vertical">Main</p></a>
             </div>
 
-            <div id="navbarGames" class="unselected outline-right center-text">
+            <div id="navbarGames" class="unselected outline-right center-text" style="margin-left: -4px;">
                 <a href="games.html"><p id="gamesText" class="inter-Italic center-text-vertical">Games</p></a>
             </div>
 
-            <div id="navbarTextChat" class="selected outline-right center-text">
+            <div id="navbarTextChat" class="selected outline-right center-text" style="margin-left: -4px;">
                 <a href="chat.html"><p id="textChatText" class="inter-Italic center-text-vertical">Text Chat</p></a>
             </div>
 
-            <div id="navbarGuestBook" class="unselected outline-right center-text">
+            <div id="navbarGuestBook" class="unselected outline-right center-text" style="margin-left: -4px;">
                 <a href="guestBook.html"><p id="guestBookText" class="inter-Italic center-text-vertical">Guest Book</p></a>
             </div>
 
@@ -38,6 +38,14 @@
 
         <div id="content">
             <div id="mainContent" class="contentItem">
+                <div id="FlashContent">
+                    <object width="800" height="600" style="">
+                        <param name="movie" value="https://uploads.ungrounded.net/624000/624818_virus_alert_2.0_base.swf">
+                        <embed src="https://uploads.ungrounded.net/624000/624818_virus_alert_2.0_base.swf" width="800" height="600">
+                        </embed>
+                    </object>
+                </div>
+                <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
                 <div style="margin-left: 5px; margin-top: 5px">
                     <img src="{% static 'images/FMessengerFlash.png' %}" </img>
                     <img src="{% static 'images/powerdByRuffle.png' %}" </img>
