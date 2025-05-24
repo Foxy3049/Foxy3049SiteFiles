@@ -78,20 +78,20 @@
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        {% comment %} <script>
+        <script>
             if($('#warning').css('display') == 'block') {
                 let seconds = 3;
             
                 setInterval(redirect, 1000);
                 function redirect() {
                     seconds-=1;
-                    document.getElementById("warningText").textContent = "Sorry, but this webpage weren't designed for mobile devices. You will be redirected to www.google.com in " + seconds + " seconds.";
+                    document.getElementById("warningText").textContent = "Sorry, but this webpage can't be accessed from mobile devices. You will be redirected to www.google.com in " + seconds + " seconds.";
                     if (seconds <= 0) {
                         seconds = 0;
                         location.href = 'http://google.com';
                     }
                 }
             }   
-        </script> {% endcomment %}
+        </script>
     </body>
 </html>
