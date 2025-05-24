@@ -13,6 +13,12 @@
         <link rel="stylesheet" href="{% static 'CSS/test.css' %}">
     </head>
     <body style="background-image: url({% static 'Images/tile.png' %})">
+
+        <div id="warning">
+            <img src="{% static "images/webpageWarning.png" %}" id="warningImage" width=1000> </img>
+            <p id="warningText" class="inter-Italic">Sorry, but this webpage can't be accessed from mobile devices. You will be redirected to www.google.com in 3 seconds.</p>
+        </div>
+
         <div id="navbar">
             <div id="navbarMain" class="selected outline-right center-text">
                 <a href="test.html"><p id="mainText" class="inter-Italic center-text-vertical">Main</p></a>
@@ -71,5 +77,21 @@
                     Aliquam maximus nunc enim, ac pretium dolor convallis in. Donec molestie commodo erat viverra pharetra. Mauris sit amet metus augue. Pellentesque libero enim, interdum non ultrices ut, dignissim et nulla. Mauris sem mauris, accumsan euismod aliquet in, maximus at orci. Vestibulum varius ligula et lacus egestas, eget consectetur lacus pulvinar. Nam vitae libero et felis accumsan imperdiet. Phasellus in ante feugiat, finibus nibh sit amet, tincidunt ligula. Integer sed dolor sem. Donec tincidunt augue eu nulla lobortis, nec fringilla mi tincidunt. Vivamus dignissim, mi ac hendrerit hendrerit, odio ipsum hendrerit arcu, ac tempor elit dolor cursus nunc. Phasellus pretium suscipit urna non auctor. Sed nec lobortis erat, cursus suscipit ex. Fusce id leo et eros volutpat malesuada. </p>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        {% comment %} <script>
+            if($('#warning').css('display') == 'block') {
+                let seconds = 3;
+            
+                setInterval(redirect, 1000);
+                function redirect() {
+                    seconds-=1;
+                    document.getElementById("warningText").textContent = "Sorry, but this webpage weren't designed for mobile devices. You will be redirected to www.google.com in " + seconds + " seconds.";
+                    if (seconds <= 0) {
+                        seconds = 0;
+                        location.href = 'http://google.com';
+                    }
+                }
+            }   
+        </script> {% endcomment %}
     </body>
 </html>

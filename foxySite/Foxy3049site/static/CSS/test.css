@@ -1,5 +1,40 @@
+#warning {
+    display: none;
+}
+
+@media (pointer:none), (pointer:coarse) {
+    #warning {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        color: white;
+        backdrop-filter: blur(8px);
+    }
+    #warningImage {
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+    }
+    #warningText {
+        margin-top: 70%;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 40px;
+    }
+}
+
 body {
     margin: 0;
+}
+
+#content {
+    z-index: 100;
 }
 
 #navbar {
@@ -12,6 +47,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    z-index: 200;
 }
 
 #navbarMain {
