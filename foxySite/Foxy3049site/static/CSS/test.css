@@ -188,3 +188,7 @@ body {
     margin-right: auto;
     margin-top: 5%;
 }
+
+hr {
+    background-color: white;
+}
