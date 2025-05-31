@@ -1,35 +1,97 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foxy3049 site</title>
-    <link rel="stylesheet" href="{% static 'CSS/css.css' %}">
-    <link rel="icon" href="{% static 'images/icon.bmp' %}" sizes="32x32">
-    <link rel="icon" href="{% static 'images/icon.bmp' %}" sizes="128x128">
-</head>
-<body>
-    <div id="LeftPanel">
-        <a href="index.html" id="home" class="leftPanelElement"><img src="https://web.archive.org/web/20091027081525/http://geocities.com/rosacarmen/Phome.gif"><p>Home</p></a>
-        <a href="games.html" id="games" class="leftPanelElement"><img src="https://web.archive.org/web/20091025221459/http://www.geocities.com/taliban_turban/old_style_joystick_md_clr.gif" width="50"><p>Games</p></a>
-        {% comment %} <a href="index.html" id="home" class="leftPanelElement"><img src="https://web.archive.org/web/20091027081525/http://geocities.com/rosacarmen/Phome.gif"><p>Home</p></a> {% endcomment %}
-        <a href="guestBook.html" id="games" class="leftPanelElement"><img src="https://web.archive.org/web/20091027004251/http://www.geocities.com/mich2inf/photos/book2.gif" width="60'"><p>Guest Book</p></a>
-    </div>
-    <div id="content">
-        <img src="{% static 'images/Foxy3049 site.png' %}" id="Logo">
-        <H1 style="text-align: center;">Welcome to Foxy3049 website!</H1>
-        <a><img id="Russian" src="https://web.archive.org/web/20090829223335/http://geocities.com/Petsburgh/Zoo/3933/russiaclr_cg31.gif"></a>
-        <img id="English" src="https://web.archive.org/web/20091023223929/http://www.geocities.com/liberty_link/res/logo/English.gif">
-        <p id="main-text">Привет! Добро пожаловать на мой сайт! Как вы поняли по дизайну данного сайта я люблю электронику и всё что с ней связанно тех времён (2000-х). Я люблю стилистику <a href="https://ru.wikipedia.org/wiki/Frutiger_Aero">Frutiger Aero</a> Я являюсь владельцем "<a href="https://foxy3049.github.io/foxygaems/">Foxy Gaems</a>".</p>
-        <div class="youtube">
-            <a href="https://www.youtube.com/@FoxyGaemsOfficial"><img src="https://web.archive.org/web/20091027061414/http://geocities.com/sumeshisgreat/youtube.gif" style="margin-left: 2%;"></a> 
-            <p id="youtube-hello" style="margin-left: 5%;">Так же у меня есть YouTube канал, на нём я собираюсь выкладывать анимации сделаные в Blender</p>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'CSS/test.css' %}">
+    </head>
+    <body style="background-image: url({% static 'Images/tile.png' %})">
+
+        <div id="warning">
+            <img src="{% static "images/webpageWarning.png" %}" id="warningImage" width=1000> </img>
+            <p id="warningText" class="inter-Italic">Sorry, but this webpage can't be accessed from mobile devices. You will be redirected to www.google.com in 3 seconds.</p>
         </div>
 
-        <img src="{% static 'images/button.png' %}" style="padding-left: 2%">
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="{% static 'js/send.js' %}"></script>
-</body>
+        <div id="navbar">
+            <div id="navbarMain" class="selected outline-right center-text">
+                <a href="test.html"><p id="mainText" class="inter-Italic center-text-vertical">Main</p></a>
+            </div>
+
+            <div id="navbarGames" class="unselected outline-right center-text" style="margin-left: -4px;">
+                <a href="games.html"><p id="gamesText" class="inter-Italic center-text-vertical">Games</p></a>
+            </div>
+
+            <div id="navbarTextChat" class="unselected outline-right center-text" style="margin-left: -4px;">
+                <a href="chat.html"><p id="textChatText" class="inter-Italic center-text-vertical">Text Chat</p></a>
+            </div>
+
+            <div id="navbarGuestBook" class="unselected outline-right center-text" style="margin-left: -4px;">
+                <a href="guestBook.html"><p id="guestBookText" class="inter-Italic center-text-vertical">Guest Book</p></a>
+            </div>
+
+            <div id="loginDiv" class="outline-left">
+                <p id="nameText" class="inter-Italic">Nickname</p>
+                <img id="arrowDown" src="{% static 'images/arrowDown.png' %}"> </img>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="mainContent" class="contentItem" style="background-image: url({% static "Images/tileContent.png" %}); color: white">
+                <p style="margin-bottom: 0px;">
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra mauris at porta pellentesque. Praesent vel commodo ex. Curabitur ultrices metus sed ante commodo, non lobortis risus viverra. Phasellus tincidunt erat et ligula pellentesque scelerisque. Donec ullamcorper erat a placerat pulvinar. Phasellus venenatis enim eget quam sagittis, in pellentesque diam facilisis. Proin tempus velit consectetur odio bibendum mattis. Curabitur ullamcorper nulla et tempor faucibus. Aliquam consectetur, ante vel eleifend varius, lacus ex facilisis dolor, nec semper odio turpis eget ipsum. Etiam ultrices eros enim, ut ornare urna feugiat vel.
+                    
+                    Nulla facilisi. Nullam consectetur sagittis iaculis. Quisque quis elementum elit, eget lacinia arcu. Donec purus mauris, gravida non auctor non, mattis quis ligula. Sed ultricies ex urna. Fusce dictum rutrum malesuada. Sed consequat dolor nec gravida tincidunt. Vivamus sagittis sagittis ultrices. Nam at est ornare, rutrum leo sed, commodo dui.
+                    
+                    Donec volutpat lectus eu metus aliquam, sit amet ullamcorper odio fermentum. Quisque massa felis, condimentum ut sollicitudin ac, pellentesque et turpis. Nunc ac risus nisi. In eleifend non ante ac bibendum. Donec odio orci, vestibulum vitae eros quis, euismod dictum erat. Sed feugiat urna mauris, sed pretium metus dapibus eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce quis semper lorem. Maecenas aliquam ultrices neque. Curabitur fermentum magna at purus accumsan porta. Phasellus convallis interdum quam in facilisis. Nunc nec mollis turpis, quis porttitor enim. Vestibulum varius felis est, a accumsan augue elementum vel.
+                    
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus scelerisque auctor urna vel sagittis. Aliquam a auctor odio, at pellentesque ante. Proin efficitur viverra enim, a ultrices risus scelerisque quis. Proin lectus risus, congue vitae eleifend eu, molestie quis orci. Nunc ipsum urna, fringilla nec tortor non, bibendum placerat justo. Maecenas auctor suscipit leo, eu convallis purus aliquet eget. In nisl nulla, scelerisque ut ipsum ut, gravida sagittis metus. Mauris tincidunt consectetur ipsum, sit amet dignissim metus gravida at.
+                    
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Quisque in suscipit justo. Maecenas molestie pretium ex sed volutpat. Nulla tristique lacus ac venenatis varius. Donec ullamcorper tortor elit, et auctor enim fermentum vitae. Ut laoreet mauris lorem. Suspendisse pulvinar ex ultricies diam posuere cursus. Nam ante ligula, sollicitudin at erat a, pharetra rutrum velit.
+                    
+                    Maecenas accumsan lacus ac sapien feugiat rhoncus. Ut dui diam, ullamcorper nec ex a, porta faucibus erat. Quisque non posuere est, id rhoncus metus. Cras tincidunt a leo eget tincidunt. Morbi ut augue libero. Mauris rutrum magna id orci tempor, vel pulvinar elit mollis. Donec vehicula cursus lectus, non aliquam ipsum vehicula vitae. Quisque mollis vitae tellus sed varius.
+                    
+                    Fusce sed interdum elit. In venenatis risus vel libero sollicitudin aliquet. Nam dapibus enim ac enim euismod, non elementum libero pharetra. Integer semper ut ligula a ultricies. Donec nec ex eu justo aliquet accumsan. Nullam at tincidunt libero, et lobortis diam. Vestibulum eget nulla at erat blandit molestie. Vivamus a ipsum vestibulum diam iaculis ornare nec eu ligula. Etiam et nibh eleifend, varius urna eget, blandit lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam congue enim ut elit molestie, eu convallis velit tristique. Integer euismod vulputate rutrum. Aenean eu malesuada lacus. Nam pretium efficitur condimentum. Ut scelerisque tempor orci non vulputate. In ex mi, viverra sit amet metus non, dignissim blandit justo.
+                    
+                    Integer bibendum, massa vitae finibus lobortis, turpis sapien tempus nunc, vel egestas nunc dui eu lorem. Pellentesque maximus arcu non dui placerat auctor. Nunc iaculis vel justo vel varius. Phasellus eu pellentesque lectus, ut sollicitudin felis. Integer rutrum nisl ut luctus imperdiet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ultricies neque in venenatis ornare. Vivamus venenatis tellus vitae augue tincidunt elementum. Proin vel felis nec orci iaculis porta non vitae diam. Pellentesque in ligula eget justo ornare vestibulum.
+                    
+                    Pellentesque faucibus scelerisque libero, eu efficitur turpis. Duis eu vehicula arcu. Ut viverra, sem vel ullamcorper consequat, quam lorem tempus massa, et eleifend eros orci id justo. Quisque vel ligula in purus finibus ultricies. Suspendisse mattis, ipsum non mollis euismod, ante ante vestibulum libero, ac ornare tortor ex quis eros. Nullam efficitur, urna ac pulvinar lobortis, ex mauris eleifend arcu, ut auctor mi lacus at risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse mattis, neque a facilisis suscipit, nulla leo congue sapien, sed rutrum nibh enim in nunc. Ut ac magna mollis, lobortis neque nec, maximus orci. Nullam augue augue, scelerisque vel tempor et, sodales non leo. Nulla mattis condimentum ante quis imperdiet. Duis velit odio, pellentesque at ex et, venenatis ornare nisl. Aenean eu orci elementum, hendrerit metus vel, posuere felis. Nullam aliquam arcu nulla, ac lobortis eros rhoncus sed. Vestibulum sed maximus massa. Nam tristique laoreet arcu in convallis.
+                    
+                    Donec vulputate cursus porta. Cras pharetra sapien sed risus ultricies condimentum non id risus. Cras malesuada condimentum mi eget sodales. Aliquam scelerisque interdum erat vel euismod. Praesent dapibus nulla odio, vel suscipit purus scelerisque vel. Fusce pulvinar, massa in consequat porttitor, nisi quam vehicula elit, placerat placerat nisl orci ac purus. Donec sit amet lacus libero.
+                    
+                    Mauris porta at nisl a tincidunt. Praesent non massa eu turpis auctor aliquet non a odio. Aenean rutrum cursus turpis, id semper lacus convallis sit amet. Mauris posuere ex ut hendrerit auctor. Morbi vel nisl purus. Aenean ac leo eleifend, auctor sapien at, rutrum nunc. Aenean aliquam lectus lorem, a tempor magna pretium sit amet. Ut euismod, velit nec rutrum sagittis, dui ligula volutpat neque, id laoreet dui justo vel est. Aliquam maximus venenatis metus, vitae egestas tortor ultricies ut. Sed sit amet eros aliquet, ornare diam ut, facilisis ipsum. Phasellus eget ornare enim. Vivamus non ultricies ipsum.
+                    
+                    Duis ornare, purus eleifend feugiat rutrum, ligula lorem ornare turpis, ac tempus quam augue nec enim. Nullam interdum quis tortor ut eleifend. Ut eget urna gravida, venenatis risus non, feugiat sem. Cras interdum lacinia lectus, eu rhoncus leo porta sollicitudin. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean sed massa nulla. Fusce vel iaculis enim, nec rhoncus purus. Duis fermentum nulla dolor, nec lacinia enim maximus viverra. Phasellus eu egestas lectus. Mauris varius egestas enim, eget maximus ipsum sollicitudin ac. Pellentesque condimentum tincidunt facilisis. Suspendisse sit amet mauris pulvinar justo volutpat ornare. Mauris pulvinar convallis mi, eu convallis dui maximus sed. Mauris condimentum auctor suscipit.
+                    
+                    Cras blandit dui ut malesuada vulputate. Vestibulum in turpis ac velit scelerisque tincidunt. Suspendisse potenti. Aliquam ac porttitor mauris. Curabitur molestie est in ipsum aliquet ultrices sed ac nisi. Quisque in mauris tempor, dictum nisi id, pharetra urna. Morbi ac purus non ligula bibendum pretium. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam et aliquam massa, in ultrices odio. Praesent cursus nec ex et semper. Vestibulum ornare luctus mauris, sit amet dictum elit ornare ac. Sed a erat aliquet, dictum nisl a, pharetra tortor. Quisque eleifend aliquet ipsum nec maximus.
+                    
+                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus pretium elementum purus, a fermentum felis sodales vel. Ut et ex molestie, hendrerit lectus tincidunt, tempus quam. Suspendisse eget orci vitae lacus scelerisque ornare sed volutpat metus. Proin in tempor lorem, convallis blandit eros. Sed aliquam ultricies ex, at rutrum erat lobortis sit amet. Aenean venenatis ut nisl id fermentum. Sed finibus at ipsum sed mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean ac ullamcorper augue, commodo imperdiet dolor. Nunc volutpat libero vel tellus bibendum porttitor sit amet at enim. Aenean non ultrices risus.
+                    
+                    Aliquam maximus nunc enim, ac pretium dolor convallis in. Donec molestie commodo erat viverra pharetra. Mauris sit amet metus augue. Pellentesque libero enim, interdum non ultrices ut, dignissim et nulla. Mauris sem mauris, accumsan euismod aliquet in, maximus at orci. Vestibulum varius ligula et lacus egestas, eget consectetur lacus pulvinar. Nam vitae libero et felis accumsan imperdiet. Phasellus in ante feugiat, finibus nibh sit amet, tincidunt ligula. Integer sed dolor sem. Donec tincidunt augue eu nulla lobortis, nec fringilla mi tincidunt. Vivamus dignissim, mi ac hendrerit hendrerit, odio ipsum hendrerit arcu, ac tempor elit dolor cursus nunc. Phasellus pretium suscipit urna non auctor. Sed nec lobortis erat, cursus suscipit ex. Fusce id leo et eros volutpat malesuada. </p>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            if($('#warning').css('display') == 'block') {
+                let seconds = 3;
+            
+                setInterval(redirect, 1000);
+                function redirect() {
+                    seconds-=1;
+                    document.getElementById("warningText").textContent = "Sorry, but this webpage can't be accessed from mobile devices. You will be redirected to www.google.com in " + seconds + " seconds.";
+                    if (seconds <= 0) {
+                        seconds = 0;
+                        location.href = 'http://google.com';
+                    }
+                }
+            }   
+        </script>
+    </body>
 </html>

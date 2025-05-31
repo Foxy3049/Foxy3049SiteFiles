@@ -180,7 +180,6 @@ body {
 }
 
 .contentItem {
-    background: linear-gradient(150deg,rgba(87, 87, 87, 1) 0%, rgba(172, 172, 172, 1) 56%, rgba(118, 118, 118, 1) 56%, rgba(166, 166, 166, 1) 100%);
     border-left: 2px solid black;
     border-top: 2px solid black;
     border-right: 2px solid black;
