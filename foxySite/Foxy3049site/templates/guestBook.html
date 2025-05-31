@@ -1,25 +1,45 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foxy3049 site</title>
-    <link rel="stylesheet" href="{% static 'CSS/css.css' %}">
-    <link rel="icon" href="{% static 'images/icon.bmp' %}" sizes="32x32">
-    <link rel="icon" href="{% static 'images/icon.bmp' %}" sizes="128x128">
-</head>
-<body>
-    <div id="LeftPanel">
-        <a href="index.html" id="home" class="leftPanelElement"><img src="https://web.archive.org/web/20091027081525/http://geocities.com/rosacarmen/Phome.gif"><p>Home</p></a>
-        <a href="games.html" id="games" class="leftPanelElement"><img src="https://web.archive.org/web/20091025221459/http://www.geocities.com/taliban_turban/old_style_joystick_md_clr.gif" width="50"><p>Games</p></a>
-        {% comment %} <a href="index.html" id="home" class="leftPanelElement"><img src="https://web.archive.org/web/20091027081525/http://geocities.com/rosacarmen/Phome.gif"><p>Home</p></a> {% endcomment %}
-        <a href="games.html" id="games" class="leftPanelElement"><img src="https://web.archive.org/web/20091027004251/http://www.geocities.com/mich2inf/photos/book2.gif" width="60'"><p>Guest Book</p></a>
-    </div>
-    <div id="content">
-        <a href="login.html" id="login"> Login /</a> <a href="register.html" id="register"> Register </a>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="{% static 'js/send.js' %}"></script>
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'CSS/test.css' %}">
+    </head>
+    <body style="background-image: url({% static 'Images/tile.png' %})">
+        <div id="navbar">
+            <div id="navbarMain" class="unselected outline-right center-text">
+                <a href="test.html"><p id="mainText" class="inter-Italic center-text-vertical">Main</p></a>
+            </div>
+
+            <div id="navbarGames" class="unselected outline-right center-text" style="margin-left: -4px;">
+                <a href="games.html"><p id="gamesText" class="inter-Italic center-text-vertical">Games</p></a>
+            </div>
+
+            <div id="navbarTextChat" class="unselected outline-right center-text" style="margin-left: -4px;">
+                <a href="chat.html"><p id="textChatText" class="inter-Italic center-text-vertical">Text Chat</p></a>
+            </div>
+
+            <div id="navbarGuestBook" class="selected outline-right center-text" style="margin-left: -4px;">
+                <a href="guestBook.html"><p id="guestBookText" class="inter-Italic center-text-vertical">Guest Book</p></a>
+            </div>
+
+            <div id="loginDiv" class="outline-left">
+                <p id="nameText" class="inter-Italic">Nickname</p>
+                <img <img id="arrowDown" src="{% static 'images/arrowDown.png' %}" </img>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="mainContent" class="contentItem" style="background-image: url({% static 'Images/tileContent.png' %})">
+                
+            </div>
+        </div>
+    </body>
 </html>
