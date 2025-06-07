@@ -179,6 +179,13 @@ body {
     margin-left: 3%;
 }
 
+#br {
+    background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    width: 60%;
+    height: 5px;
+    margin-left: 5px;
+}
+
 .contentItem {
     border-left: 2px solid black;
     border-top: 2px solid black;
@@ -189,6 +196,8 @@ body {
     margin-top: 5%;
 }
 
-hr {
-    background-color: white;
+.centerHorisontal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
